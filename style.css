@@ -12,11 +12,12 @@ body {
     position: relative;
     background: #ffffff;
 }
-
+/* 
 #menu {
     background: #f59359;
     width: 250px;
     height: 100%;
+    
 }
 
 #menu .logo{
@@ -67,4 +68,86 @@ body {
     text-decoration: none;
     font-weight: 300px;
     transition: 0.3s ease;
+} */
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f59359;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+}
+.sidebar .logo{
+    margin-bottom: 30%;
+}
+.sidebar .logo img{
+    width: 30%;
+    margin-top: 10%;
+}
+.sidebar .logo h3{
+    color: white;
+}
+.sidebar .logo h6{
+    color: white;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #f4762c;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #f4762c;
+    color: white;
+}
+
+div.content {
+    margin-left: 20%;
+    padding: 1px 16px;
+    height: 100%;
+    padding-top: 1%;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+}
+}
+div.content h2{
+    font-weight: 500;
+}
+div.content .input-group{
+    width: 50%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.table{
+    border-color: #ffffff!important;
+}
+th:nth-child(1){
+    color: #f59359;
+}
+tr{
+    background-color: rgba(231, 227, 227, 0.952);
 }
